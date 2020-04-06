@@ -1,0 +1,820 @@
+
+NNScore 2.02
+============
+
+NNScore 2.02 is released under the GNU General Public License (see
+http://www.gnu.org/licenses/gpl.html). If you have any questions,
+comments, or suggestions, please contact the author, Jacob Durrant, at
+durrantj [at] pitt [dot] edu. If you use NNScore 2.02 in your work,
+please cite NNScore 2.0: A Neural-Network Receptor-Ligand Scoring
+Function. Jacob D. Durrant, Andrew McCammon. Journal of Chemical
+Information and Modeling, 2011, 51 (11), pp 2897-2903.
+
+NNScore 2.02 is based in part on the ffnet python package developed by
+Marek Wojciechowski (http://ffnet.sourceforge.net/).
+
+Use the -help command-line parameter for extended help.
+
+Example: python NNScore2.py -receptor myreceptor.pdbqt -ligand myligand.pdbqt -vina_executable /PATH/TO/VINA/1.1.2/vina
+
+Command-line parameters used:
+	Receptor:        ../6LU7_noligand.pdbqt
+	Ligand:          ../vina_dockings/lig19_6LU7/lig19_out.pdbqt
+	Vina executable: /usr/local/bin/vina
+
+
+LOADING THE RECEPTOR
+====================
+
+
+EVALUATING EACH OF THE POSES IN THE LIGAND FILE USING 20 TRAINED NEURAL NETWORKS
+================================================================================
+
+MODEL 1
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, Journal of Computational Chemistry 31 (2010)  #
+# 455-461                                                       #
+#                                                               #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see http://vina.scripps.edu for more information.      #
+#################################################################
+
+Detected 8 CPUs
+Reading input ... done.
+Setting up the scoring function ... done.
+Affinity: -7.29244 (kcal/mol)
+Intermolecular contributions to the terms, before weighting:
+    gauss 1     : 77.33275
+    gauss 2     : 1150.78799
+    repulsion   : 2.42384
+    hydrophobic : 17.45151
+    Hydrogen    : 2.22978
+
+	Network #1 gave a score of 6.879 (Kd = 132.08 nM)
+	Network #2 gave a score of 2.19 (Kd = 6.46 mM)
+	Network #3 gave a score of 5.533 (Kd = 2.93 uM)
+	Network #4 gave a score of 0.869 (Kd = 135.3 mM)
+	Network #5 gave a score of 7.759 (Kd = 17.42 nM)
+	Network #6 gave a score of 7.622 (Kd = 23.85 nM)
+	Network #7 gave a score of 7.308 (Kd = 49.18 nM)
+	Network #8 gave a score of 4.853 (Kd = 14.04 uM)
+	Network #9 gave a score of 2.758 (Kd = 1.75 mM)
+	Network #10 gave a score of 8.533 (Kd = 2.93 nM)
+	Network #11 gave a score of 2.388 (Kd = 4.09 mM)
+	Network #12 gave a score of 2.588 (Kd = 2.58 mM)
+	Network #13 gave a score of 5.796 (Kd = 1.6 uM)
+	Network #14 gave a score of 0.216 (Kd = 608.67 mM)
+	Network #15 gave a score of 8.74 (Kd = 1.82 nM)
+	Network #16 gave a score of 1.323 (Kd = 47.52 mM)
+	Network #17 gave a score of 3.157 (Kd = 697.4 uM)
+	Network #18 gave a score of 0.17 (Kd = 676.28 mM)
+	Network #19 gave a score of 3.834 (Kd = 146.72 uM)
+	Network #20 gave a score of -1.225 (Kd = 16.78 M)
+
+('\tBest Score:         ', 8.74, '(Kd = 1.82 nM)')
+('\tAverage Score:      ', 4.064, '(Kd = 86.2 uM)')
+('\tStandard Deviation: ', 3.07)
+
+MODEL 2
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, Journal of Computational Chemistry 31 (2010)  #
+# 455-461                                                       #
+#                                                               #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see http://vina.scripps.edu for more information.      #
+#################################################################
+
+Detected 8 CPUs
+Reading input ... done.
+Setting up the scoring function ... done.
+Affinity: -6.99363 (kcal/mol)
+Intermolecular contributions to the terms, before weighting:
+    gauss 1     : 66.28080
+    gauss 2     : 1038.77132
+    repulsion   : 1.50706
+    hydrophobic : 16.45102
+    Hydrogen    : 2.02205
+
+	Network #1 gave a score of 6.874 (Kd = 133.51 nM)
+	Network #2 gave a score of 2.455 (Kd = 3.51 mM)
+	Network #3 gave a score of 1.662 (Kd = 21.77 mM)
+	Network #4 gave a score of 8.548 (Kd = 2.83 nM)
+	Network #5 gave a score of 7.701 (Kd = 19.91 nM)
+	Network #6 gave a score of 6.699 (Kd = 199.91 nM)
+	Network #7 gave a score of 8.127 (Kd = 7.46 nM)
+	Network #8 gave a score of 3.16 (Kd = 692.14 uM)
+	Network #9 gave a score of 1.243 (Kd = 57.2 mM)
+	Network #10 gave a score of 3.866 (Kd = 136.2 uM)
+	Network #11 gave a score of 5.116 (Kd = 7.66 uM)
+	Network #12 gave a score of 5.425 (Kd = 3.76 uM)
+	Network #13 gave a score of 5.405 (Kd = 3.94 uM)
+	Network #14 gave a score of -0.027 (Kd = 1.06 M)
+	Network #15 gave a score of 6.728 (Kd = 187.23 nM)
+	Network #16 gave a score of 6.344 (Kd = 452.74 nM)
+	Network #17 gave a score of 3.974 (Kd = 106.2 uM)
+	Network #18 gave a score of 4.694 (Kd = 20.22 uM)
+	Network #19 gave a score of 6.94 (Kd = 114.74 nM)
+	Network #20 gave a score of 2.855 (Kd = 1.4 mM)
+
+('\tBest Score:         ', 8.548, '(Kd = 2.83 nM)')
+('\tAverage Score:      ', 4.889, '(Kd = 12.9 uM)')
+('\tStandard Deviation: ', 2.43)
+
+MODEL 3
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, Journal of Computational Chemistry 31 (2010)  #
+# 455-461                                                       #
+#                                                               #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see http://vina.scripps.edu for more information.      #
+#################################################################
+
+Detected 8 CPUs
+Reading input ... done.
+Setting up the scoring function ... done.
+Affinity: -6.84774 (kcal/mol)
+Intermolecular contributions to the terms, before weighting:
+    gauss 1     : 60.29628
+    gauss 2     : 1078.03533
+    repulsion   : 0.60804
+    hydrophobic : 15.34684
+    Hydrogen    : 0.54613
+
+	Network #1 gave a score of 7.531 (Kd = 29.42 nM)
+	Network #2 gave a score of 1.398 (Kd = 40.02 mM)
+	Network #3 gave a score of 4.907 (Kd = 12.4 uM)
+	Network #4 gave a score of 2.494 (Kd = 3.21 mM)
+	Network #5 gave a score of 7.404 (Kd = 39.47 nM)
+	Network #6 gave a score of 3.165 (Kd = 684.54 uM)
+	Network #7 gave a score of 5.675 (Kd = 2.11 uM)
+	Network #8 gave a score of 4.264 (Kd = 54.51 uM)
+	Network #9 gave a score of 8.194 (Kd = 6.39 nM)
+	Network #10 gave a score of 0.543 (Kd = 286.24 mM)
+	Network #11 gave a score of 6.819 (Kd = 151.72 nM)
+	Network #12 gave a score of 4.513 (Kd = 30.66 uM)
+	Network #13 gave a score of 4.446 (Kd = 35.78 uM)
+	Network #14 gave a score of 1.47 (Kd = 33.87 mM)
+	Network #15 gave a score of 9.868 (Kd = 135.62 pM)
+	Network #16 gave a score of 5.695 (Kd = 2.02 uM)
+	Network #17 gave a score of 2.333 (Kd = 4.65 mM)
+	Network #18 gave a score of 3.734 (Kd = 184.33 uM)
+	Network #19 gave a score of 0.204 (Kd = 624.64 mM)
+	Network #20 gave a score of 3.435 (Kd = 367.32 uM)
+
+('\tBest Score:         ', 9.868, '(Kd = 135.62 pM)')
+('\tAverage Score:      ', 4.405, '(Kd = 39.4 uM)')
+('\tStandard Deviation: ', 2.65)
+
+MODEL 4
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, Journal of Computational Chemistry 31 (2010)  #
+# 455-461                                                       #
+#                                                               #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see http://vina.scripps.edu for more information.      #
+#################################################################
+
+Detected 8 CPUs
+Reading input ... done.
+Setting up the scoring function ... done.
+Affinity: -6.76160 (kcal/mol)
+Intermolecular contributions to the terms, before weighting:
+    gauss 1     : 64.20869
+    gauss 2     : 1019.18482
+    repulsion   : 1.77402
+    hydrophobic : 14.06324
+    Hydrogen    : 2.39507
+
+	Network #1 gave a score of 2.507 (Kd = 3.11 mM)
+	Network #2 gave a score of 8.415 (Kd = 3.84 nM)
+	Network #3 gave a score of 7.868 (Kd = 13.56 nM)
+	Network #4 gave a score of 8.728 (Kd = 1.87 nM)
+	Network #5 gave a score of 8.698 (Kd = 2.0 nM)
+	Network #6 gave a score of 5.357 (Kd = 4.4 uM)
+	Network #7 gave a score of 5.899 (Kd = 1.26 uM)
+	Network #8 gave a score of 6.2 (Kd = 631.42 nM)
+	Network #9 gave a score of 4.885 (Kd = 13.03 uM)
+	Network #10 gave a score of 0.77 (Kd = 169.69 mM)
+	Network #11 gave a score of 4.517 (Kd = 30.39 uM)
+	Network #12 gave a score of 7.065 (Kd = 86.11 nM)
+	Network #13 gave a score of 4.484 (Kd = 32.78 uM)
+	Network #14 gave a score of 1.397 (Kd = 40.1 mM)
+	Network #15 gave a score of 2.037 (Kd = 9.18 mM)
+	Network #16 gave a score of -1.102 (Kd = 12.66 M)
+	Network #17 gave a score of 5.155 (Kd = 7.01 uM)
+	Network #18 gave a score of 4.121 (Kd = 75.75 uM)
+	Network #19 gave a score of 4.665 (Kd = 21.64 uM)
+	Network #20 gave a score of 3.864 (Kd = 136.93 uM)
+
+('\tBest Score:         ', 8.728, '(Kd = 1.87 nM)')
+('\tAverage Score:      ', 4.776, '(Kd = 16.73 uM)')
+('\tStandard Deviation: ', 2.704)
+
+MODEL 5
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, Journal of Computational Chemistry 31 (2010)  #
+# 455-461                                                       #
+#                                                               #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see http://vina.scripps.edu for more information.      #
+#################################################################
+
+Detected 8 CPUs
+Reading input ... done.
+Setting up the scoring function ... done.
+Affinity: -6.78983 (kcal/mol)
+Intermolecular contributions to the terms, before weighting:
+    gauss 1     : 63.50018
+    gauss 2     : 1114.05215
+    repulsion   : 2.50856
+    hydrophobic : 16.90645
+    Hydrogen    : 2.53828
+
+	Network #1 gave a score of 1.787 (Kd = 16.34 mM)
+	Network #2 gave a score of 5.904 (Kd = 1.25 uM)
+	Network #3 gave a score of 2.759 (Kd = 1.74 mM)
+	Network #4 gave a score of 4.855 (Kd = 13.97 uM)
+	Network #5 gave a score of 8.714 (Kd = 1.93 nM)
+	Network #6 gave a score of 2.244 (Kd = 5.7 mM)
+	Network #7 gave a score of 6.138 (Kd = 728.59 nM)
+	Network #8 gave a score of 5.562 (Kd = 2.74 uM)
+	Network #9 gave a score of 5.547 (Kd = 2.84 uM)
+	Network #10 gave a score of 6.159 (Kd = 693.47 nM)
+	Network #11 gave a score of 4.982 (Kd = 10.43 uM)
+	Network #12 gave a score of 0.653 (Kd = 222.29 mM)
+	Network #13 gave a score of 9.514 (Kd = 305.96 pM)
+	Network #14 gave a score of 4.33 (Kd = 46.77 uM)
+	Network #15 gave a score of 6.414 (Kd = 385.73 nM)
+	Network #16 gave a score of 5.112 (Kd = 7.73 uM)
+	Network #17 gave a score of 2.582 (Kd = 2.62 mM)
+	Network #18 gave a score of 2.575 (Kd = 2.66 mM)
+	Network #19 gave a score of -0.919 (Kd = 8.3 M)
+	Network #20 gave a score of 4.14 (Kd = 72.48 uM)
+
+('\tBest Score:         ', 9.514, '(Kd = 305.96 pM)')
+('\tAverage Score:      ', 4.453, '(Kd = 35.27 uM)')
+('\tStandard Deviation: ', 2.555)
+
+MODEL 6
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, Journal of Computational Chemistry 31 (2010)  #
+# 455-461                                                       #
+#                                                               #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see http://vina.scripps.edu for more information.      #
+#################################################################
+
+Detected 8 CPUs
+Reading input ... done.
+Setting up the scoring function ... done.
+Affinity: -6.52141 (kcal/mol)
+Intermolecular contributions to the terms, before weighting:
+    gauss 1     : 67.13075
+    gauss 2     : 958.52641
+    repulsion   : 0.89937
+    hydrophobic : 16.93840
+    Hydrogen    : 0.84763
+
+	Network #1 gave a score of 5.389 (Kd = 4.08 uM)
+	Network #2 gave a score of -0.308 (Kd = 2.03 M)
+	Network #3 gave a score of 3.73 (Kd = 186.07 uM)
+	Network #4 gave a score of 2.848 (Kd = 1.42 mM)
+	Network #5 gave a score of 4.303 (Kd = 49.72 uM)
+	Network #6 gave a score of 1.18 (Kd = 66.09 mM)
+	Network #7 gave a score of 5.421 (Kd = 3.79 uM)
+	Network #8 gave a score of 3.116 (Kd = 765.54 uM)
+	Network #9 gave a score of 4.945 (Kd = 11.35 uM)
+	Network #10 gave a score of 0.264 (Kd = 545.02 mM)
+	Network #11 gave a score of 3.771 (Kd = 169.43 uM)
+	Network #12 gave a score of 0.104 (Kd = 786.93 mM)
+	Network #13 gave a score of 7.116 (Kd = 76.53 nM)
+	Network #14 gave a score of 0.045 (Kd = 902.25 mM)
+	Network #15 gave a score of 1.561 (Kd = 27.47 mM)
+	Network #16 gave a score of 6.052 (Kd = 886.22 nM)
+	Network #17 gave a score of 3.255 (Kd = 555.41 uM)
+	Network #18 gave a score of 3.45 (Kd = 355.08 uM)
+	Network #19 gave a score of 2.751 (Kd = 1.77 mM)
+	Network #20 gave a score of 5.663 (Kd = 2.17 uM)
+
+('\tBest Score:         ', 7.116, '(Kd = 76.53 nM)')
+('\tAverage Score:      ', 3.233, '(Kd = 584.96 uM)')
+('\tStandard Deviation: ', 2.197)
+
+MODEL 7
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, Journal of Computational Chemistry 31 (2010)  #
+# 455-461                                                       #
+#                                                               #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see http://vina.scripps.edu for more information.      #
+#################################################################
+
+Detected 8 CPUs
+Reading input ... done.
+Setting up the scoring function ... done.
+Affinity: -6.41737 (kcal/mol)
+Intermolecular contributions to the terms, before weighting:
+    gauss 1     : 55.60893
+    gauss 2     : 981.64574
+    repulsion   : 0.60606
+    hydrophobic : 10.45718
+    Hydrogen    : 1.09943
+
+	Network #1 gave a score of 3.781 (Kd = 165.48 uM)
+	Network #2 gave a score of 4.187 (Kd = 65.08 uM)
+	Network #3 gave a score of 1.816 (Kd = 15.26 mM)
+	Network #4 gave a score of 5.224 (Kd = 5.97 uM)
+	Network #5 gave a score of 7.911 (Kd = 12.28 nM)
+	Network #6 gave a score of 6.058 (Kd = 874.43 nM)
+	Network #7 gave a score of 4.493 (Kd = 32.11 uM)
+	Network #8 gave a score of 6.581 (Kd = 262.13 nM)
+	Network #9 gave a score of 5.318 (Kd = 4.81 uM)
+	Network #10 gave a score of 0.828 (Kd = 148.51 mM)
+	Network #11 gave a score of 1.032 (Kd = 92.87 mM)
+	Network #12 gave a score of 6.644 (Kd = 226.9 nM)
+	Network #13 gave a score of 3.284 (Kd = 520.21 uM)
+	Network #14 gave a score of -0.616 (Kd = 4.13 M)
+	Network #15 gave a score of -0.24 (Kd = 1.74 M)
+	Network #16 gave a score of 0.362 (Kd = 434.28 mM)
+	Network #17 gave a score of 5.374 (Kd = 4.23 uM)
+	Network #18 gave a score of 1.64 (Kd = 22.92 mM)
+	Network #19 gave a score of 3.639 (Kd = 229.74 uM)
+	Network #20 gave a score of 5.767 (Kd = 1.71 uM)
+
+('\tBest Score:         ', 7.911, '(Kd = 12.28 nM)')
+('\tAverage Score:      ', 3.654, '(Kd = 221.74 uM)')
+('\tStandard Deviation: ', 2.531)
+
+MODEL 8
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, Journal of Computational Chemistry 31 (2010)  #
+# 455-461                                                       #
+#                                                               #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see http://vina.scripps.edu for more information.      #
+#################################################################
+
+Detected 8 CPUs
+Reading input ... done.
+Setting up the scoring function ... done.
+Affinity: -6.23270 (kcal/mol)
+Intermolecular contributions to the terms, before weighting:
+    gauss 1     : 56.61784
+    gauss 2     : 999.77374
+    repulsion   : 0.91179
+    hydrophobic : 14.50000
+    Hydrogen    : 0.70905
+
+	Network #1 gave a score of 3.699 (Kd = 200.01 uM)
+	Network #2 gave a score of 1.632 (Kd = 23.34 mM)
+	Network #3 gave a score of 18.361 (Kd = 0.0 fM)
+	Network #4 gave a score of -1.704 (Kd = 50.55 M)
+	Network #5 gave a score of 6.9 (Kd = 125.89 nM)
+	Network #6 gave a score of 5.675 (Kd = 2.11 uM)
+	Network #7 gave a score of 1.319 (Kd = 47.96 mM)
+	Network #8 gave a score of 1.065 (Kd = 86.18 mM)
+	Network #9 gave a score of 15.322 (Kd = 0.48 fM)
+	Network #10 gave a score of 6.666 (Kd = 215.64 nM)
+	Network #11 gave a score of 6.346 (Kd = 451.04 nM)
+	Network #12 gave a score of 1.784 (Kd = 16.44 mM)
+	Network #13 gave a score of 16.535 (Kd = 0.03 fM)
+	Network #14 gave a score of 0.775 (Kd = 168.0 mM)
+	Network #15 gave a score of 0.355 (Kd = 441.33 mM)
+	Network #16 gave a score of 4.38 (Kd = 41.73 uM)
+	Network #17 gave a score of -1.972 (Kd = 93.76 M)
+	Network #18 gave a score of 4.896 (Kd = 12.69 uM)
+	Network #19 gave a score of 4.807 (Kd = 15.58 uM)
+	Network #20 gave a score of 8.991 (Kd = 1.02 nM)
+
+('\tBest Score:         ', 18.361, '(Kd = 0.0 fM)')
+('\tAverage Score:      ', 5.292, '(Kd = 5.11 uM)')
+('\tStandard Deviation: ', 5.744)
+
+MODEL 9
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, Journal of Computational Chemistry 31 (2010)  #
+# 455-461                                                       #
+#                                                               #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see http://vina.scripps.edu for more information.      #
+#################################################################
+
+Detected 8 CPUs
+Reading input ... done.
+Setting up the scoring function ... done.
+Affinity: -6.16102 (kcal/mol)
+Intermolecular contributions to the terms, before weighting:
+    gauss 1     : 46.57729
+    gauss 2     : 1013.42926
+    repulsion   : 0.40299
+    hydrophobic : 7.40741
+    Hydrogen    : 0.74969
+
+	Network #1 gave a score of 7.559 (Kd = 27.61 nM)
+	Network #2 gave a score of 6.228 (Kd = 591.0 nM)
+	Network #3 gave a score of 5.894 (Kd = 1.28 uM)
+	Network #4 gave a score of 8.554 (Kd = 2.79 nM)
+	Network #5 gave a score of 10.274 (Kd = 53.18 pM)
+	Network #6 gave a score of 5.773 (Kd = 1.69 uM)
+	Network #7 gave a score of 3.672 (Kd = 212.89 uM)
+	Network #8 gave a score of 13.501 (Kd = 31.53 fM)
+	Network #9 gave a score of 3.652 (Kd = 222.99 uM)
+	Network #10 gave a score of 15.885 (Kd = 0.13 fM)
+	Network #11 gave a score of 4.726 (Kd = 18.79 uM)
+	Network #12 gave a score of 7.173 (Kd = 67.16 nM)
+	Network #13 gave a score of 6.297 (Kd = 504.92 nM)
+	Network #14 gave a score of 6.396 (Kd = 401.75 nM)
+	Network #15 gave a score of 6.428 (Kd = 372.92 nM)
+	Network #16 gave a score of 11.037 (Kd = 9.17 pM)
+	Network #17 gave a score of 11.9 (Kd = 1.26 pM)
+	Network #18 gave a score of 5.64 (Kd = 2.29 uM)
+	Network #19 gave a score of 9.044 (Kd = 902.71 pM)
+	Network #20 gave a score of 9.58 (Kd = 262.82 pM)
+
+('\tBest Score:         ', 15.885, '(Kd = 0.13 fM)')
+('\tAverage Score:      ', 7.961, '(Kd = 10.95 nM)')
+('\tStandard Deviation: ', 3.254)
+
+
+RANKED POSES AND SCORES WHEN EACH OF THE 20 NETWORKS IS CONSIDERED SEPARATELY
+=============================================================================
+
+             USING NETWORK #1             
+ Rank | Pose     | Score | Predicted Kd 
+------+----------+-------+--------------
+  1   | MODEL 9  | 7.559 |   27.61 nM   
+  2   | MODEL 3  | 7.531 |   29.42 nM   
+  3   | MODEL 1  | 6.879 |  132.08 nM   
+  4   | MODEL 2  | 6.874 |  133.51 nM   
+  5   | MODEL 6  | 5.389 |   4.08 uM    
+  6   | MODEL 7  | 3.781 |  165.48 uM   
+  7   | MODEL 8  | 3.699 |  200.01 uM   
+  8   | MODEL 4  | 2.507 |   3.11 mM    
+  9   | MODEL 5  | 1.787 |   16.34 mM   
+
+             USING NETWORK #2             
+ Rank | Pose     | Score | Predicted Kd 
+------+----------+-------+--------------
+  1   | MODEL 4  | 8.415 |   3.84 nM    
+  2   | MODEL 9  | 6.228 |   591.0 nM   
+  3   | MODEL 5  | 5.904 |   1.25 uM    
+  4   | MODEL 7  | 4.187 |   65.08 uM   
+  5   | MODEL 2  | 2.455 |   3.51 mM    
+  6   | MODEL 1  |  2.19 |   6.46 mM    
+  7   | MODEL 8  | 1.632 |   23.34 mM   
+  8   | MODEL 3  | 1.398 |   40.02 mM   
+  9   | MODEL 6  | -0.308|    2.03 M    
+
+             USING NETWORK #3             
+ Rank | Pose     | Score | Predicted Kd 
+------+----------+-------+--------------
+  1   | MODEL 8  | 18.361|    0.0 fM    
+  2   | MODEL 4  | 7.868 |   13.56 nM   
+  3   | MODEL 9  | 5.894 |   1.28 uM    
+  4   | MODEL 1  | 5.533 |   2.93 uM    
+  5   | MODEL 3  | 4.907 |   12.4 uM    
+  6   | MODEL 6  |  3.73 |  186.07 uM   
+  7   | MODEL 5  | 2.759 |   1.74 mM    
+  8   | MODEL 7  | 1.816 |   15.26 mM   
+  9   | MODEL 2  | 1.662 |   21.77 mM   
+
+             USING NETWORK #4             
+ Rank | Pose     | Score | Predicted Kd 
+------+----------+-------+--------------
+  1   | MODEL 4  | 8.728 |   1.87 nM    
+  2   | MODEL 9  | 8.554 |   2.79 nM    
+  3   | MODEL 2  | 8.548 |   2.83 nM    
+  4   | MODEL 7  | 5.224 |   5.97 uM    
+  5   | MODEL 5  | 4.855 |   13.97 uM   
+  6   | MODEL 6  | 2.848 |   1.42 mM    
+  7   | MODEL 3  | 2.494 |   3.21 mM    
+  8   | MODEL 1  | 0.869 |   135.3 mM   
+  9   | MODEL 8  | -1.704|   50.55 M    
+
+             USING NETWORK #5             
+ Rank | Pose     | Score | Predicted Kd 
+------+----------+-------+--------------
+  1   | MODEL 9  | 10.274|   53.18 pM   
+  2   | MODEL 5  | 8.714 |   1.93 nM    
+  3   | MODEL 4  | 8.698 |    2.0 nM    
+  4   | MODEL 7  | 7.911 |   12.28 nM   
+  5   | MODEL 1  | 7.759 |   17.42 nM   
+  6   | MODEL 2  | 7.701 |   19.91 nM   
+  7   | MODEL 3  | 7.404 |   39.47 nM   
+  8   | MODEL 8  |  6.9  |  125.89 nM   
+  9   | MODEL 6  | 4.303 |   49.72 uM   
+
+             USING NETWORK #6             
+ Rank | Pose     | Score | Predicted Kd 
+------+----------+-------+--------------
+  1   | MODEL 1  | 7.622 |   23.85 nM   
+  2   | MODEL 2  | 6.699 |  199.91 nM   
+  3   | MODEL 7  | 6.058 |  874.43 nM   
+  4   | MODEL 9  | 5.773 |   1.69 uM    
+  5   | MODEL 8  | 5.675 |   2.11 uM    
+  6   | MODEL 4  | 5.357 |    4.4 uM    
+  7   | MODEL 3  | 3.165 |  684.54 uM   
+  8   | MODEL 5  | 2.244 |    5.7 mM    
+  9   | MODEL 6  |  1.18 |   66.09 mM   
+
+             USING NETWORK #7             
+ Rank | Pose     | Score | Predicted Kd 
+------+----------+-------+--------------
+  1   | MODEL 2  | 8.127 |   7.46 nM    
+  2   | MODEL 1  | 7.308 |   49.18 nM   
+  3   | MODEL 5  | 6.138 |  728.59 nM   
+  4   | MODEL 4  | 5.899 |   1.26 uM    
+  5   | MODEL 3  | 5.675 |   2.11 uM    
+  6   | MODEL 6  | 5.421 |   3.79 uM    
+  7   | MODEL 7  | 4.493 |   32.11 uM   
+  8   | MODEL 9  | 3.672 |  212.89 uM   
+  9   | MODEL 8  | 1.319 |   47.96 mM   
+
+             USING NETWORK #8             
+ Rank | Pose     | Score | Predicted Kd 
+------+----------+-------+--------------
+  1   | MODEL 9  | 13.501|   31.53 fM   
+  2   | MODEL 7  | 6.581 |  262.13 nM   
+  3   | MODEL 4  |  6.2  |  631.42 nM   
+  4   | MODEL 5  | 5.562 |   2.74 uM    
+  5   | MODEL 1  | 4.853 |   14.04 uM   
+  6   | MODEL 3  | 4.264 |   54.51 uM   
+  7   | MODEL 2  |  3.16 |  692.14 uM   
+  8   | MODEL 6  | 3.116 |  765.54 uM   
+  9   | MODEL 8  | 1.065 |   86.18 mM   
+
+             USING NETWORK #9             
+ Rank | Pose     | Score | Predicted Kd 
+------+----------+-------+--------------
+  1   | MODEL 8  | 15.322|   0.48 fM    
+  2   | MODEL 3  | 8.194 |   6.39 nM    
+  3   | MODEL 5  | 5.547 |   2.84 uM    
+  4   | MODEL 7  | 5.318 |   4.81 uM    
+  5   | MODEL 6  | 4.945 |   11.35 uM   
+  6   | MODEL 4  | 4.885 |   13.03 uM   
+  7   | MODEL 9  | 3.652 |  222.99 uM   
+  8   | MODEL 1  | 2.758 |   1.75 mM    
+  9   | MODEL 2  | 1.243 |   57.2 mM    
+
+            USING NETWORK #10             
+ Rank | Pose     | Score | Predicted Kd 
+------+----------+-------+--------------
+  1   | MODEL 9  | 15.885|   0.13 fM    
+  2   | MODEL 1  | 8.533 |   2.93 nM    
+  3   | MODEL 8  | 6.666 |  215.64 nM   
+  4   | MODEL 5  | 6.159 |  693.47 nM   
+  5   | MODEL 2  | 3.866 |   136.2 uM   
+  6   | MODEL 7  | 0.828 |  148.51 mM   
+  7   | MODEL 4  |  0.77 |  169.69 mM   
+  8   | MODEL 3  | 0.543 |  286.24 mM   
+  9   | MODEL 6  | 0.264 |  545.02 mM   
+
+            USING NETWORK #11             
+ Rank | Pose     | Score | Predicted Kd 
+------+----------+-------+--------------
+  1   | MODEL 3  | 6.819 |  151.72 nM   
+  2   | MODEL 8  | 6.346 |  451.04 nM   
+  3   | MODEL 2  | 5.116 |   7.66 uM    
+  4   | MODEL 5  | 4.982 |   10.43 uM   
+  5   | MODEL 9  | 4.726 |   18.79 uM   
+  6   | MODEL 4  | 4.517 |   30.39 uM   
+  7   | MODEL 6  | 3.771 |  169.43 uM   
+  8   | MODEL 1  | 2.388 |   4.09 mM    
+  9   | MODEL 7  | 1.032 |   92.87 mM   
+
+            USING NETWORK #12             
+ Rank | Pose     | Score | Predicted Kd 
+------+----------+-------+--------------
+  1   | MODEL 9  | 7.173 |   67.16 nM   
+  2   | MODEL 4  | 7.065 |   86.11 nM   
+  3   | MODEL 7  | 6.644 |   226.9 nM   
+  4   | MODEL 2  | 5.425 |   3.76 uM    
+  5   | MODEL 3  | 4.513 |   30.66 uM   
+  6   | MODEL 1  | 2.588 |   2.58 mM    
+  7   | MODEL 8  | 1.784 |   16.44 mM   
+  8   | MODEL 5  | 0.653 |  222.29 mM   
+  9   | MODEL 6  | 0.104 |  786.93 mM   
+
+            USING NETWORK #13             
+ Rank | Pose     | Score | Predicted Kd 
+------+----------+-------+--------------
+  1   | MODEL 8  | 16.535|   0.03 fM    
+  2   | MODEL 5  | 9.514 |  305.96 pM   
+  3   | MODEL 6  | 7.116 |   76.53 nM   
+  4   | MODEL 9  | 6.297 |  504.92 nM   
+  5   | MODEL 1  | 5.796 |    1.6 uM    
+  6   | MODEL 2  | 5.405 |   3.94 uM    
+  7   | MODEL 4  | 4.484 |   32.78 uM   
+  8   | MODEL 3  | 4.446 |   35.78 uM   
+  9   | MODEL 7  | 3.284 |  520.21 uM   
+
+            USING NETWORK #14             
+ Rank | Pose     | Score | Predicted Kd 
+------+----------+-------+--------------
+  1   | MODEL 9  | 6.396 |  401.75 nM   
+  2   | MODEL 5  |  4.33 |   46.77 uM   
+  3   | MODEL 3  |  1.47 |   33.87 mM   
+  4   | MODEL 4  | 1.397 |   40.1 mM    
+  5   | MODEL 8  | 0.775 |   168.0 mM   
+  6   | MODEL 1  | 0.216 |  608.67 mM   
+  7   | MODEL 6  | 0.045 |  902.25 mM   
+  8   | MODEL 2  | -0.027|    1.06 M    
+  9   | MODEL 7  | -0.616|    4.13 M    
+
+            USING NETWORK #15             
+ Rank | Pose     | Score | Predicted Kd 
+------+----------+-------+--------------
+  1   | MODEL 3  | 9.868 |  135.62 pM   
+  2   | MODEL 1  |  8.74 |   1.82 nM    
+  3   | MODEL 2  | 6.728 |  187.23 nM   
+  4   | MODEL 9  | 6.428 |  372.92 nM   
+  5   | MODEL 5  | 6.414 |  385.73 nM   
+  6   | MODEL 4  | 2.037 |   9.18 mM    
+  7   | MODEL 6  | 1.561 |   27.47 mM   
+  8   | MODEL 8  | 0.355 |  441.33 mM   
+  9   | MODEL 7  | -0.24 |    1.74 M    
+
+            USING NETWORK #16             
+ Rank | Pose     | Score | Predicted Kd 
+------+----------+-------+--------------
+  1   | MODEL 9  | 11.037|   9.17 pM    
+  2   | MODEL 2  | 6.344 |  452.74 nM   
+  3   | MODEL 6  | 6.052 |  886.22 nM   
+  4   | MODEL 3  | 5.695 |   2.02 uM    
+  5   | MODEL 5  | 5.112 |   7.73 uM    
+  6   | MODEL 8  |  4.38 |   41.73 uM   
+  7   | MODEL 1  | 1.323 |   47.52 mM   
+  8   | MODEL 7  | 0.362 |  434.28 mM   
+  9   | MODEL 4  | -1.102|   12.66 M    
+
+            USING NETWORK #17             
+ Rank | Pose     | Score | Predicted Kd 
+------+----------+-------+--------------
+  1   | MODEL 9  |  11.9 |   1.26 pM    
+  2   | MODEL 7  | 5.374 |   4.23 uM    
+  3   | MODEL 4  | 5.155 |   7.01 uM    
+  4   | MODEL 2  | 3.974 |   106.2 uM   
+  5   | MODEL 6  | 3.255 |  555.41 uM   
+  6   | MODEL 1  | 3.157 |   697.4 uM   
+  7   | MODEL 5  | 2.582 |   2.62 mM    
+  8   | MODEL 3  | 2.333 |   4.65 mM    
+  9   | MODEL 8  | -1.972|   93.76 M    
+
+            USING NETWORK #18             
+ Rank | Pose     | Score | Predicted Kd 
+------+----------+-------+--------------
+  1   | MODEL 9  |  5.64 |   2.29 uM    
+  2   | MODEL 8  | 4.896 |   12.69 uM   
+  3   | MODEL 2  | 4.694 |   20.22 uM   
+  4   | MODEL 4  | 4.121 |   75.75 uM   
+  5   | MODEL 3  | 3.734 |  184.33 uM   
+  6   | MODEL 6  |  3.45 |  355.08 uM   
+  7   | MODEL 5  | 2.575 |   2.66 mM    
+  8   | MODEL 7  |  1.64 |   22.92 mM   
+  9   | MODEL 1  |  0.17 |  676.28 mM   
+
+            USING NETWORK #19             
+ Rank | Pose     | Score | Predicted Kd 
+------+----------+-------+--------------
+  1   | MODEL 9  | 9.044 |  902.71 pM   
+  2   | MODEL 2  |  6.94 |  114.74 nM   
+  3   | MODEL 8  | 4.807 |   15.58 uM   
+  4   | MODEL 4  | 4.665 |   21.64 uM   
+  5   | MODEL 1  | 3.834 |  146.72 uM   
+  6   | MODEL 7  | 3.639 |  229.74 uM   
+  7   | MODEL 6  | 2.751 |   1.77 mM    
+  8   | MODEL 3  | 0.204 |  624.64 mM   
+  9   | MODEL 5  | -0.919|    8.3 M     
+
+            USING NETWORK #20             
+ Rank | Pose     | Score | Predicted Kd 
+------+----------+-------+--------------
+  1   | MODEL 9  |  9.58 |  262.82 pM   
+  2   | MODEL 8  | 8.991 |   1.02 nM    
+  3   | MODEL 7  | 5.767 |   1.71 uM    
+  4   | MODEL 6  | 5.663 |   2.17 uM    
+  5   | MODEL 5  |  4.14 |   72.48 uM   
+  6   | MODEL 4  | 3.864 |  136.93 uM   
+  7   | MODEL 3  | 3.435 |  367.32 uM   
+  8   | MODEL 2  | 2.855 |    1.4 mM    
+  9   | MODEL 1  | -1.225|   16.78 M    
+
+
+RANKED POSES AND SCORES WHEN A CONSENSUS OF NETWORK OUTPUTS ARE CONSIDERED
+==========================================================================
+
+              BEST SCORE OF ALL 20 NETWORKS, BY POSE             
+ Rank | Pose     | Average Score | Predicted Kd | Network
+------+----------+---------------+--------------+---------
+  1   | MODEL 8  |     18.361    |    0.0 fM    |    #3   
+  2   | MODEL 9  |     15.885    |   0.13 fM    |   #10   
+  3   | MODEL 3  |     9.868     |  135.62 pM   |   #15   
+  4   | MODEL 5  |     9.514     |  305.96 pM   |   #13   
+  5   | MODEL 1  |      8.74     |   1.82 nM    |   #15   
+  6   | MODEL 4  |     8.728     |   1.87 nM    |    #4   
+  7   | MODEL 2  |     8.548     |   2.83 nM    |    #4   
+  8   | MODEL 7  |     7.911     |   12.28 nM   |    #5   
+  9   | MODEL 6  |     7.116     |   76.53 nM   |   #13   
+
+              AVERAGE SCORE OF ALL 20 NETWORKS, BY POSE               
+ Rank | Pose     | Average Score | Standard Deviation | Predicted Kd
+------+----------+---------------+--------------------+--------------
+  1   | MODEL 9  |     7.961     |       3.254        |    10.95 nM   
+  2   | MODEL 8  |     5.292     |       5.744        |    5.11 uM    
+  3   | MODEL 2  |     4.889     |        2.43        |    12.9 uM    
+  4   | MODEL 4  |     4.776     |       2.704        |    16.73 uM   
+  5   | MODEL 5  |     4.453     |       2.555        |    35.27 uM   
+  6   | MODEL 3  |     4.405     |        2.65        |    39.4 uM    
+  7   | MODEL 1  |     4.064     |        3.07        |    86.2 uM    
+  8   | MODEL 7  |     3.654     |       2.531        |   221.74 uM   
+  9   | MODEL 6  |     3.233     |       2.197        |   584.96 uM   
+
+
+SUMMARY
+=======
+
+Best pose scored by network #1: MODEL 9 (Score = 7.559 = 27.61 nM)
+Best pose scored by network #2: MODEL 4 (Score = 8.415 = 3.84 nM)
+Best pose scored by network #3: MODEL 8 (Score = 18.361 = 0.0 fM)
+Best pose scored by network #4: MODEL 4 (Score = 8.728 = 1.87 nM)
+Best pose scored by network #5: MODEL 9 (Score = 10.274 = 53.18 pM)
+Best pose scored by network #6: MODEL 1 (Score = 7.622 = 23.85 nM)
+Best pose scored by network #7: MODEL 2 (Score = 8.127 = 7.46 nM)
+Best pose scored by network #8: MODEL 9 (Score = 13.501 = 31.53 fM)
+Best pose scored by network #9: MODEL 8 (Score = 15.322 = 0.48 fM)
+Best pose scored by network #10: MODEL 9 (Score = 15.885 = 0.13 fM)
+Best pose scored by network #11: MODEL 3 (Score = 6.819 = 151.72 nM)
+Best pose scored by network #12: MODEL 9 (Score = 7.173 = 67.16 nM)
+Best pose scored by network #13: MODEL 8 (Score = 16.535 = 0.03 fM)
+Best pose scored by network #14: MODEL 9 (Score = 6.396 = 401.75 nM)
+Best pose scored by network #15: MODEL 3 (Score = 9.868 = 135.62 pM)
+Best pose scored by network #16: MODEL 9 (Score = 11.037 = 9.17 pM)
+Best pose scored by network #17: MODEL 9 (Score = 11.9 = 1.26 pM)
+Best pose scored by network #18: MODEL 9 (Score = 5.64 = 2.29 uM)
+Best pose scored by network #19: MODEL 9 (Score = 9.044 = 902.71 pM)
+Best pose scored by network #20: MODEL 9 (Score = 9.58 = 262.82 pM)
+
+When the poses were ranked by the best of the 20 network scores
+associated with each pose, the best-scoring pose was MODEL 8 (Score =
+18.361 = 0.0 fM)
+
+When the poses were ranked by the average of the 20 network scores
+associated with each pose, the best-scoring pose was MODEL 9 (Score =
+7.961 +/- 3.254 = 10.95 nM). This is the recommended ranking/scoring
+metric.
+
+10.95 nM
