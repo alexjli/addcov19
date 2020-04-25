@@ -27,3 +27,4 @@ Unfortunately, our code base is somewhat of a mess right now. We combined all ou
 	- bo_molbind_*: a first round of BO optimizations that had a flaw in its algorithm but produced decent results. Not reported in the Medium article due to the flaw it contained, but retained for its potential future usage.
 	- revised_bo_molbind*: BO optimization with a correct algorithm. Results are stored in revised_bo_molbind_results
 * anything that contains the word zinc: a trial of using our model trained on the ZINC dataset rather than MOSES. We weren't able to finish the work, but it's also retained for its potential future usage.
+ 
